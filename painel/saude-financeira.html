@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde financeira da empresa</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="topo">
+    <h1>Saúde financeira</h1>
+    <button id="btnMenu" class="btn-menu" aria-label="Abrir menu lateral">☰</button>
+</header>
+
+<div class="layout">
+    <aside class="menu" id="menuLateral">
+        <p class="menu-titulo">Navegação</p>
+        <a href="../index.html" class="menu-link">Sair / Login</a>
+        <a href="index.html#visao" class="menu-link">Visão geral</a>
+        <a href="index.html#receitas" class="menu-link">Receitas & despesas</a>
+        <a href="emprestimos.html" class="menu-link">Empréstimos</a>
+        <a href="relatorios.html" class="menu-link">Relatórios</a>
+        <a href="categorias.html" class="menu-link">Categorias</a>
+        <a href="guias.html" class="menu-link">Guias</a>
+        <a href="o-que-preciso.html" class="menu-link">O que preciso ter</a>
+        <a href="saude-financeira.html" class="menu-link ativo">Saúde financeira</a>
+    </aside>
+
+    <main class="conteudo">
+        <!-- Card com a "nota" de saúde financeira -->
+        <section class="card">
+            <h2>Resumo da saúde financeira</h2>
+            <p class="texto-menor">
+                Estes indicadores são calculados a partir dos lançamentos do painel principal.
+            </p>
+
+            <div class="cards-resumo">
+                <div class="resumo">
+                    <span class="resumo-label">Saldo atual</span>
+                    <span id="saudeSaldo" class="saldo">R$ 0,00</span>
+                </div>
+                <div class="resumo">
+                    <span class="resumo-label">Índice de despesas</span>
+                    <span id="saudeIndiceDespesas">0%</span>
+                </div>
+                <div class="resumo">
+                    <span class="resumo-label">Situação geral</span>
+                    <span id="saudeSituacao">–</span>
+                </div>
+            </div>
+
+            <p id="saudeMensagem" class="texto-menor" style="margin-top:8px;">
+                Aguardando dados do painel...
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Como interpretar esses indicadores?</h2>
+            <ul class="lista-simples">
+                <li><strong>Saldo atual:</strong> diferença entre tudo que entrou (receitas) e tudo que saiu (despesas).</li>
+                <li><strong>Índice de despesas:</strong> quanto as despesas representam em relação às receitas.</li>
+                <li><strong>Situação:</strong> classificação simples baseada no saldo e no índice de despesas.</li>
+            </ul>
+            <p class="texto-menor" style="margin-top:6px;">
+                Exemplo de interpretação:
+                se a empresa tem saldo positivo e as despesas são menores que 60% das receitas,
+                a situação tende a ser considerada <strong>boa</strong>.
+            </p>
+        </section>
+    </main>
+</div>
+
+<footer class="rodape">
+    <p>© 2025 Saúde Financeira</p>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

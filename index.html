@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financeiro Empresas - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="login-body">
+
+<main class="login-main">
+
+    <!-- ============================
+         LADO ESQUERDO – TEXTO BONITO
+    ============================= -->
+    <section class="login-info">
+
+        <h1 class="login-logo">Financeiro <span>Empresas</span></h1>
+
+        <p class="texto-menor" style="max-width: 500px;">
+            Centralize o controle financeiro da sua empresa em um só lugar.
+            Acompanhe resultados, organize gastos e tome decisões com mais segurança.
+        </p>
+
+        <ul class="lista-simples">
+            <li>Visão clara do caixa da empresa em tempo real.</li>
+            <li>Registro de receitas, despesas e saldo mensal.</li>
+            <li>Acompanhamento dos empréstimos tomados.</li>
+            <li>Relatórios mensais e por categoria.</li>
+            <li>Guias com “o que eu preciso ter para…” organizar as finanças.</li>
+        </ul>
+    </section>
+
+    <!-- ============================
+         LADO DIREITO – FORMULÁRIO
+    ============================= -->
+    <section class="login-card">
+
+        <h2 style="margin-bottom: 4px;">Entrar no painel</h2>
+        <p class="texto-menor">Acesse com qualquer e-mail e senha. É apenas uma demonstração.</p>
+
+        <!-- FORMULÁRIO -->
+        <form id="formLogin" class="formulario">
+            <div class="grupo">
+                <label for="loginEmail">E-mail</label>
+                <input id="loginEmail" type="email" placeholder="seuemail@empresa.com" required>
+            </div>
+
+            <div class="grupo">
+                <label for="loginSenha">Senha</label>
+                <input
+    id="loginSenha"
+    type="text"
+    placeholder="Digite uma senha de demonstração"
+    autocomplete="off"
+    required
+>
+
+            </div>
+
+            <span id="erroLogin" class="erro"></span>
+
+            <button type="submit" class="btn">Acessar painel</button>
+        </form>
+
+        <p class="texto-menor" style="margin-top: 12px;">
+            Nenhum dado real é salvo. Sistema apenas para apresentação acadêmica.
+        </p>
+    </section>
+
+</main>
+
+<footer class="rodape">
+    <p>© 2025 Financeiro Empresas - Projeto acadêmico</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

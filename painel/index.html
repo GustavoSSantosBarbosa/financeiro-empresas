@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Financeiro</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="topo">
+    <h1>Painel Financeiro</h1>
+    <button id="btnMenu" class="btn-menu" aria-label="Abrir menu lateral">☰</button>
+</header>
+
+<div class="layout">
+    <!-- MENU LATERAL -->
+    <aside class="menu" id="menuLateral">
+    <p class="menu-titulo">Navegação</p>
+    <a href="../index.html" class="menu-link">Sair / Login</a>
+    <a href="index.html#visao" class="menu-link ativo">Visão geral</a>
+    <a href="index.html#receitas" class="menu-link">Receitas & despesas</a>
+    <a href="emprestimos.html" class="menu-link">Empréstimos</a>
+    <a href="relatorios.html" class="menu-link">Relatórios</a>
+    <a href="categorias.html" class="menu-link">Categorias</a>
+    <a href="guias.html" class="menu-link">Guias</a>
+    <a href="o-que-preciso.html" class="menu-link">O que preciso ter</a>
+    <a href="saude-financeira.html" class="menu-link">Saúde financeira</a>
+</aside>
+
+
+    <!-- CONTEÚDO DO PAINEL -->
+    <main class="conteudo">
+        <!-- Visão geral com cards -->
+        <section id="visao" class="card">
+            <h2>Visão geral da empresa</h2>
+            <p class="texto-menor">
+                Resumo das receitas, despesas, saldo e indicadores básicos.
+                Os dados começam com valores de exemplo e são atualizados pelos lançamentos.
+            </p>
+
+            <div class="cards-resumo">
+                <div class="resumo">
+                    <span class="resumo-label">Total de receitas</span>
+                    <span id="totalReceitas" class="positivo">R$ 0,00</span>
+                </div>
+                <div class="resumo">
+                    <span class="resumo-label">Total de despesas</span>
+                    <span id="totalDespesas" class="negativo">R$ 0,00</span>
+                </div>
+                <div class="resumo">
+                    <span class="resumo-label">Saldo</span>
+                    <span id="saldo" class="saldo">R$ 0,00</span>
+                </div>
+                <div class="resumo">
+                    <span class="resumo-label">Meta do mês</span>
+                    <span id="metaMes">R$ 0,00</span>
+                </div>
+            </div>
+
+            <div class="cards-resumo">
+                <div class="resumo">
+                    <span class="resumo-label">Progresso da meta</span>
+                    <span id="progressoMeta">0%</span>
+                </div>
+                <div class="resumo">
+                    <span class="resumo-label">Maior receita</span>
+                    <span id="maiorReceita">-</span>
+                </div>
+                <div class="resumo">
+                    <span class="resumo-label">Maior despesa</span>
+                    <span id="maiorDespesa">-</span>
+                </div>
+                <div class="resumo">
+                    <span class="resumo-label">Qtd. de lançamentos</span>
+                    <span id="qtdLancamentos">0</span>
+                </div>
+            </div>
+
+            <h3>Top 3 despesas mais altas</h3>
+            <ul id="topDespesas" class="lista-simples">
+                <!-- preenchido no JS -->
+            </ul>
+        </section>
+
+        <!-- Tabela com lançamentos e formulário no MESMO card -->
+        <section id="receitas" class="card">
+            <h2>Lançamentos financeiros</h2>
+            <p class="texto-menor">
+                Aqui a empresa registra entradas (receitas) e saídas (despesas).
+            </p>
+
+            <!-- TABELA -->
+            <div class="tabela-wrapper" style="margin-bottom:12px;">
+                <table class="tabela" aria-label="Tabela de lançamentos">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Descrição</th>
+                        <th>Tipo</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                    </tr>
+                    </thead>
+                    <tbody id="listaLancamentos">
+                    <!-- linhas adicionadas via JS -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- FORMULÁRIO -->
+            <h3>Novo lançamento</h3>
+            <form id="formLancamento" class="formulario" novalidate>
+                <div class="grupo">
+                    <label for="tipo">Tipo *</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">Selecione</option>
+                        <option value="Receita">Receita</option>
+                        <option value="Despesa">Despesa</option>
+                    </select>
+                    <span class="erro" id="erroTipo"></span>
+                </div>
+
+                <div class="grupo">
+                    <label for="descricao">Descrição *</label>
+                    <input id="descricao" type="text" minlength="3" maxlength="60"
+                           required placeholder="Ex.: Venda de serviço">
+                    <span class="erro" id="erroDescricao"></span>
+                </div>
+
+                <div class="grupo">
+                    <label for="valor">Valor (R$) *</label>
+                    <input id="valor" type="number" min="0.01" step="0.01"
+                           required placeholder="0,00">
+                    <span class="erro" id="erroValor"></span>
+                </div>
+
+                <div class="grupo">
+                    <label for="data">Data *</label>
+                    <input id="data" type="date" required>
+                    <span class="erro" id="erroData"></span>
+                </div>
+
+                <button type="submit" class="btn">Adicionar lançamento</button>
+            </form>
+        </section>
+    </main>
+</div>
+
+<footer class="rodape">
+    <p>© 2025 Painel Financeiro</p>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

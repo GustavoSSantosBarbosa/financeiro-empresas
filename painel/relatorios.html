@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios Financeiros</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="topo">
+    <h1>Relatórios Financeiros</h1>
+    <button id="btnMenu" class="btn-menu" aria-label="Abrir menu lateral">☰</button>
+</header>
+
+<div class="layout">
+    <aside class="menu" id="menuLateral">
+    <p class="menu-titulo">Navegação</p>
+    <a href="../index.html" class="menu-link">Sair / Login</a>
+    <a href="index.html#visao" class="menu-link ativo">Visão geral</a>
+    <a href="index.html#receitas" class="menu-link">Receitas & despesas</a>
+    <a href="emprestimos.html" class="menu-link">Empréstimos</a>
+    <a href="relatorios.html" class="menu-link">Relatórios</a>
+    <a href="categorias.html" class="menu-link">Categorias</a>
+    <a href="guias.html" class="menu-link">Guias</a>
+    <a href="o-que-preciso.html" class="menu-link">O que preciso ter</a>
+    <a href="saude-financeira.html" class="menu-link">Saúde financeira</a>
+</aside>
+
+
+    <main class="conteudo">
+        <section class="card">
+            <h2>Indicadores principais</h2>
+            <p class="texto-menor">
+                Exemplos de indicadores que aparecem em relatórios financeiros.
+            </p>
+
+            <div class="cards-resumo">
+                <div class="resumo">
+                    <span class="resumo-label">Margem de lucro</span>
+                    <span>30%</span>
+                </div>
+                <div class="resumo">
+                    <span class="resumo-label">Crescimento vs. mês passado</span>
+                    <span class="positivo">+12%</span>
+                </div>
+                <div class="resumo">
+                    <span class="resumo-label">Índice de despesas</span>
+                    <span class="negativo">70% do faturamento</span>
+                </div>
+                <div class="resumo">
+                    <span class="resumo-label">Ticket médio por venda</span>
+                    <span>R$ 1.250,00</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Resumo mensal</h2>
+            <p class="texto-menor">
+                Comparação de faturamento, despesas e saldo por mês.
+            </p>
+
+            <div class="tabela-wrapper">
+                <table class="tabela">
+                    <thead>
+                    <tr>
+                        <th>Mês</th>
+                        <th>Faturamento</th>
+                        <th>Despesas</th>
+                        <th>Saldo</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Julho</td>
+                        <td class="positivo">R$ 18.000,00</td>
+                        <td class="negativo">R$ 12.000,00</td>
+                        <td class="saldo">R$ 6.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>Agosto</td>
+                        <td class="positivo">R$ 20.000,00</td>
+                        <td class="negativo">R$ 13.500,00</td>
+                        <td class="saldo">R$ 6.500,00</td>
+                    </tr>
+                    <tr>
+                        <td>Setembro</td>
+                        <td class="positivo">R$ 22.000,00</td>
+                        <td class="negativo">R$ 15.400,00</td>
+                        <td class="saldo">R$ 6.600,00</td>
+                    </tr>
+                    <tr>
+                        <td>Outubro</td>
+                        <td class="positivo">R$ 25.000,00</td>
+                        <td class="negativo">R$ 17.500,00</td>
+                        <td class="saldo">R$ 7.500,00</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Despesas por categoria</h2>
+            <p class="texto-menor">
+                Agrupa as despesas por tipo, para ver onde a empresa gasta mais.
+            </p>
+
+            <div class="tabela-wrapper">
+                <table class="tabela">
+                    <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th>Valor</th>
+                        <th>Percentual do total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Fixas (aluguel, internet, energia)</td>
+                        <td class="negativo">R$ 7.000,00</td>
+                        <td>40%</td>
+                    </tr>
+                    <tr>
+                        <td>Pessoal (salários, benefícios)</td>
+                        <td class="negativo">R$ 6.500,00</td>
+                        <td>37%</td>
+                    </tr>
+                    <tr>
+                        <td>Marketing</td>
+                        <td class="negativo">R$ 3.000,00</td>
+                        <td>17%</td>
+                    </tr>
+                    <tr>
+                        <td>Outros</td>
+                        <td class="negativo">R$ 1.500,00</td>
+                        <td>6%</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</div>
+
+<footer class="rodape">
+    <p>© 2025 Relatórios Financeiros</p>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Empréstimos</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="topo">
+    <h1>Controle de Empréstimos</h1>
+    <button id="btnMenu" class="btn-menu" aria-label="Abrir menu lateral">☰</button>
+</header>
+
+<div class="layout">
+    <aside class="menu" id="menuLateral">
+    <p class="menu-titulo">Navegação</p>
+    <a href="../index.html" class="menu-link">Sair / Login</a>
+    <a href="index.html#visao" class="menu-link ativo">Visão geral</a>
+    <a href="index.html#receitas" class="menu-link">Receitas & despesas</a>
+    <a href="emprestimos.html" class="menu-link">Empréstimos</a>
+    <a href="relatorios.html" class="menu-link">Relatórios</a>
+    <a href="categorias.html" class="menu-link">Categorias</a>
+    <a href="guias.html" class="menu-link">Guias</a>
+    <a href="o-que-preciso.html" class="menu-link">O que preciso ter</a>
+    <a href="saude-financeira.html" class="menu-link">Saúde financeira</a>
+</aside>
+
+
+    <main class="conteudo">
+        <section class="card">
+            <h2>Resumo dos empréstimos</h2>
+            <p class="texto-menor">
+                Controle dos empréstimos tomados pela empresa: valores, prazos e taxas de juros.
+            </p>
+
+            <div class="cards-resumo">
+                <div class="resumo">
+                    <span class="resumo-label">Total emprestado</span>
+                    <span class="negativo">R$ 80.000,00</span>
+                </div>
+                <div class="resumo">
+                    <span class="resumo-label">Saldo a pagar</span>
+                    <span class="negativo">R$ 52.000,00</span>
+                </div>
+                <div class="resumo">
+                    <span class="resumo-label">Taxa média de juros</span>
+                    <span>1,8% ao mês</span>
+                </div>
+                <div class="resumo">
+                    <span class="resumo-label">Próxima parcela</span>
+                    <span>R$ 3.200,00 em 10/01/2026</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Empréstimos detalhados</h2>
+            <p class="texto-menor">
+                Cada linha representa um empréstimo que a empresa pegou.
+            </p>
+
+            <div class="tabela-wrapper">
+                <table class="tabela">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Banco / Origem</th>
+                        <th>Valor contratado</th>
+                        <th>Taxa de juros</th>
+                        <th>Prazo</th>
+                        <th>Parcela mensal</th>
+                        <th>Situação</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Banco A</td>
+                        <td class="negativo">R$ 50.000,00</td>
+                        <td>1,5% ao mês</td>
+                        <td>24 meses</td>
+                        <td>R$ 2.500,00</td>
+                        <td>Em andamento</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Banco B</td>
+                        <td class="negativo">R$ 20.000,00</td>
+                        <td>2,1% ao mês</td>
+                        <td>18 meses</td>
+                        <td>R$ 1.450,00</td>
+                        <td>Em andamento</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Fintech C</td>
+                        <td class="negativo">R$ 10.000,00</td>
+                        <td>1,2% ao mês</td>
+                        <td>12 meses</td>
+                        <td>R$ 930,00</td>
+                        <td>Quitado</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</div>
+
+<footer class="rodape">
+    <p>© 2025 Controle de Empréstimos</p>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

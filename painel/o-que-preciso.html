@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que eu preciso ter</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="topo">
+    <h1>O que eu preciso ter</h1>
+    <button id="btnMenu" class="btn-menu" aria-label="Abrir menu lateral">☰</button>
+</header>
+
+<div class="layout">
+    <aside class="menu" id="menuLateral">
+        <p class="menu-titulo">Navegação</p>
+        <a href="../index.html" class="menu-link">Sair / Login</a>
+        <a href="index.html#visao" class="menu-link">Visão geral</a>
+        <a href="index.html#receitas" class="menu-link">Receitas & despesas</a>
+        <a href="emprestimos.html" class="menu-link">Empréstimos</a>
+        <a href="relatorios.html" class="menu-link">Relatórios</a>
+        <a href="categorias.html" class="menu-link">Categorias</a>
+        <a href="guias.html" class="menu-link">Guias</a>
+        <a href="o-que-preciso.html" class="menu-link ativo">O que preciso ter</a>
+        <a href="saude-financeira.html" class="menu-link">Saúde financeira</a>
+    </aside>
+
+    <main class="conteudo">
+        <!-- Pequeno resumo dinâmico -->
+        <section class="card">
+            <h2>Situação atual (resumo)</h2>
+            <p class="texto-menor">
+                Estes dados vêm do painel principal e ajudam a entender por onde começar.
+            </p>
+
+            <div class="cards-resumo">
+                <div class="resumo">
+                    <span class="resumo-label">Saldo atual</span>
+                    <span id="oqSaldoAtual" class="saldo">R$ 0,00</span>
+                </div>
+                <div class="resumo">
+                    <span class="resumo-label">Total de receitas</span>
+                    <span id="oqTotalReceitas" class="positivo">R$ 0,00</span>
+                </div>
+                <div class="resumo">
+                    <span class="resumo-label">Total de despesas</span>
+                    <span id="oqTotalDespesas" class="negativo">R$ 0,00</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>O que eu preciso ter para organizar as finanças da empresa?</h2>
+            <ul class="lista-simples">
+                <li>Um registro atualizado de todas as receitas e despesas.</li>
+                <li>Separação clara entre contas pessoais e contas da empresa.</li>
+                <li>Uma meta mensal de faturamento e de gastos máximos.</li>
+                <li>Um dia fixo na semana para revisar o caixa.</li>
+                <li>Relatórios simples para comparar meses e categorias de gastos.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>O que eu preciso ter para conseguir um empréstimo saudável?</h2>
+            <ul class="lista-simples">
+                <li>Comprovação de faturamento (notas, contratos, extratos).</li>
+                <li>Histórico de pagamentos em dia.</li>
+                <li>Planejamento de como o dinheiro será utilizado.</li>
+                <li>Cálculo da parcela máxima que a empresa consegue pagar.</li>
+                <li>Pesquisa de taxas e prazos em diferentes bancos/fintechs.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>O que eu preciso ter para manter lucro todo mês?</h2>
+            <ul class="lista-simples">
+                <li>Controle de custos fixos e variáveis.</li>
+                <li>Revisão periódica de contratos mais caros (aluguel, sistemas, serviços).</li>
+                <li>Registro das melhores fontes de receita (clientes, produtos, serviços).</li>
+                <li>Indicadores simples: margem de lucro e índice de despesas.</li>
+                <li>Reserva financeira para imprevistos.</li>
+            </ul>
+        </section>
+    </main>
+</div>
+
+<footer class="rodape">
+    <p>© 2025 O que preciso ter</p>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

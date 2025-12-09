@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias financeiras</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="topo">
+    <h1>Categorias financeiras</h1>
+    <button id="btnMenu" class="btn-menu" aria-label="Abrir menu lateral">☰</button>
+</header>
+
+<div class="layout">
+    <!-- Menu lateral (categorias ativo) -->
+    <aside class="menu" id="menuLateral">
+        <p class="menu-titulo">Navegação</p>
+        <a href="../index.html" class="menu-link">Sair / Login</a>
+        <a href="index.html#visao" class="menu-link">Visão geral</a>
+        <a href="index.html#receitas" class="menu-link">Receitas & despesas</a>
+        <a href="emprestimos.html" class="menu-link">Empréstimos</a>
+        <a href="relatorios.html" class="menu-link">Relatórios</a>
+        <a href="categorias.html" class="menu-link ativo">Categorias</a>
+        <a href="guias.html" class="menu-link">Guias</a>
+        <a href="o-que-preciso.html" class="menu-link">O que preciso ter</a>
+        <a href="saude-financeira.html" class="menu-link">Saúde financeira</a>
+    </aside>
+
+    <main class="conteudo">
+        <!-- Resumo vindo do painel (preenchido pelo JS) -->
+        <section class="card">
+            <h2>Resumo por tipo</h2>
+            <p class="texto-menor">
+                Estes valores são trazidos automaticamente do painel de lançamentos.
+            </p>
+
+            <div class="cards-resumo">
+                <div class="resumo">
+                    <span class="resumo-label">Total de receitas</span>
+                    <span id="catTotalReceitas" class="positivo">R$ 0,00</span>
+                </div>
+                <div class="resumo">
+                    <span class="resumo-label">Total de despesas</span>
+                    <span id="catTotalDespesas" class="negativo">R$ 0,00</span>
+                </div>
+                <div class="resumo">
+                    <span class="resumo-label">Saldo</span>
+                    <span id="catSaldo" class="saldo">R$ 0,00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categorias de receitas -->
+        <section class="card">
+            <h2>Categorias de receitas</h2>
+            <p class="texto-menor">
+                Exemplo de como a empresa pode organizar suas fontes de entrada de dinheiro.
+            </p>
+
+            <ul class="lista-simples">
+                <li>Vendas de produtos.</li>
+                <li>Prestação de serviços.</li>
+                <li>Contratos de consultoria.</li>
+                <li>Treinamentos e cursos.</li>
+                <li>Rendimentos de aplicações financeiras.</li>
+            </ul>
+        </section>
+
+        <!-- Categorias de despesas -->
+        <section class="card">
+            <h2>Categorias de despesas</h2>
+            <p class="texto-menor">
+                Separar as despesas em categorias ajuda a descobrir onde a empresa gasta mais.
+            </p>
+
+            <ul class="lista-simples">
+                <li>Despesas fixas (aluguel, internet, energia, condomínio).</li>
+                <li>Despesas variáveis (marketing, transporte, viagens, comissões).</li>
+                <li>Despesas com pessoal (salários, encargos, benefícios).</li>
+                <li>Despesas administrativas (contabilidade, taxas, softwares).</li>
+                <li>Impostos e tributos.</li>
+            </ul>
+        </section>
+    </main>
+</div>
+
+<footer class="rodape">
+    <p>© 2025 Categorias Financeiras</p>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
